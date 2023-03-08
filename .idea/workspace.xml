@@ -2,16 +2,22 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="SpringMVC1:war exploded" />
+      <artifact name="SpringMVC1:war" />
     </artifacts-to-build>
   </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65e02975-0fde-4432-b8a1-b26d7166c04c" name="Changes" comment="fourth init delete controller and view + added 2 controllers + 3 views">
+    <list default="true" id="65e02975-0fde-4432-b8a1-b26d7166c04c" name="Changes" comment="fifth init + request with param logic">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/first/calculator.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/config/controllers/FirstController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/controllers/FirstController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/config/MySpringMVCDispatcherServletInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/MySpringMvcDispatcherSerlvetIntitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/config/controllers/FirstController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/FirstController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/config/controllers/SecondController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/SecondController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/first/goodbye.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/first/goodbye.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/first/hello.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/first/hello.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -70,22 +76,27 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.73">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.7">
     <configuration name="generated-requests | #12" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="12" requestIdentifier="#12" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="Tomcat 9.0.73" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.73" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 10.1.7" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.1.7" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="BROWSER_ID" value="37cae5b9-e8b2-4949-9172-aafa37fbc09c" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="SpringMVC1:war exploded">
+        <artifact name="SpringMVC1:war">
           <settings>
             <option name="CONTEXT_PATH" value="" />
           </settings>
         </artifact>
       </deployment>
       <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="2a7d03ef-9149-4199-a496-4ccdee19b330" />
+        <option name="BASE_DIRECTORY_NAME" value="132f7963-4c87-4297-ac73-0444569f43d9" />
       </server-settings>
       <predefined_log_file enabled="true" id="Tomcat" />
       <predefined_log_file enabled="true" id="Tomcat Catalina" />
@@ -93,7 +104,7 @@
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
       <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="51706" />
+        <option name="DEBUG_PORT" value="52348" />
       </RunnerSettings>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
         <option name="USE_ENV_VARIABLES" value="true" />
@@ -157,14 +168,11 @@
       </ConfigurationWrapper>
       <method v="2">
         <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="SpringMVC1:war exploded" />
-        </option>
       </method>
     </configuration>
     <list>
       <item itemvalue="HTTP Request.generated-requests | #12" />
-      <item itemvalue="Tomcat Server.Tomcat 9.0.73" />
+      <item itemvalue="Tomcat Server.Tomcat 10.1.7" />
     </list>
     <recent_temporary>
       <list>
@@ -181,7 +189,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678266187843</updated>
       <workItem from="1678266189218" duration="789000" />
-      <workItem from="1678267060163" duration="7190000" />
+      <workItem from="1678267060163" duration="12025000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1678266456156</created>
@@ -211,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678272861552</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fifth init + request with param logic">
+      <created>1678275140323</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1678275140323</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +237,7 @@
     <MESSAGE value="second init apache 9 server(run conf-&gt;war artefact)+ xml(servlet to get http-requests and resend to controller) + controlelr" />
     <MESSAGE value="third init config and web config rebase on Java - classes" />
     <MESSAGE value="fourth init delete controller and view + added 2 controllers + 3 views" />
-    <option name="LAST_COMMIT_MESSAGE" value="fourth init delete controller and view + added 2 controllers + 3 views" />
+    <MESSAGE value="fifth init + request with param logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="fifth init + request with param logic" />
   </component>
 </project>
