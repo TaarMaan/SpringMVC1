@@ -9,13 +9,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="65e02975-0fde-4432-b8a1-b26d7166c04c" name="Changes" comment="second init apache 9 server(run conf-&gt;war artefact)+ xml(servlet to get http-requests and resend to controller) + controlelr">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/config/MySpringMVCDispatcherServletInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/config/SpringConfig.java" afterDir="false" />
+    <list default="true" id="65e02975-0fde-4432-b8a1-b26d7166c04c" name="Changes" comment="third init config and web config rebase on Java - classes">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/config/controllers/FirstController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/config/controllers/SecondController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/first/goodbye.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/first/hello.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/second/exit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/applicationContextMVC.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/hello_world.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +29,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -57,6 +61,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
@@ -71,7 +76,10 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.73">
+    <configuration name="generated-requests | #12" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="12" requestIdentifier="#12" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="Tomcat 9.0.73" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.73" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
       <option name="BROWSER_ID" value="37cae5b9-e8b2-4949-9172-aafa37fbc09c" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -160,6 +168,15 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="HTTP Request.generated-requests | #12" />
+      <item itemvalue="Tomcat Server.Tomcat 9.0.73" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="HTTP Request.generated-requests | #12" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -170,7 +187,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678266187843</updated>
       <workItem from="1678266189218" duration="789000" />
-      <workItem from="1678267060163" duration="4397000" />
+      <workItem from="1678267060163" duration="5444000" />
     </task>
     <task id="LOCAL-00001" summary="first init">
       <created>1678266456156</created>
@@ -186,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1678270356850</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="third init config and web config rebase on Java - classes">
+      <created>1678271590124</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1678271590124</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +219,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first init" />
     <MESSAGE value="second init apache 9 server(run conf-&gt;war artefact)+ xml(servlet to get http-requests and resend to controller) + controlelr" />
-    <option name="LAST_COMMIT_MESSAGE" value="second init apache 9 server(run conf-&gt;war artefact)+ xml(servlet to get http-requests and resend to controller) + controlelr" />
+    <MESSAGE value="third init config and web config rebase on Java - classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="third init config and web config rebase on Java - classes" />
   </component>
 </project>
